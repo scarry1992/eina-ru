@@ -1,0 +1,59 @@
+.book-random {
+
+  font-size: 0;
+  .item{
+    box-sizing: border-box;
+    background-color: $third;
+  }
+  .title {
+    margin: 40px 0 20px 0;
+  }
+  img {
+    width: 35%;
+  }
+  .parametrs-wrap{
+    padding: 12px 14px;
+  }
+  .parametrs {
+    width: 65%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+
+  }
+  li{
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  .description{
+    position: relative;
+    font-size: 12px;
+    border-top: 1px solid #d6d6d6;
+    padding: 12px 14px;
+    color: #989898;
+    line-height: 20px;
+
+    &:before{
+      display: block;
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 9px;
+      left: 17%;
+      top: -9px;
+      background-image: url(../../../img/ico/arr.png);
+
+    }
+  }
+  .key{
+    font-size: 10px;
+    color: #979797;
+    line-height: 14px;
+  }
+  .value{
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    line-height: 16px;
+  }
+}

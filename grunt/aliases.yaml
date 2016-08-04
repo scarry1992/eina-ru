@@ -2,3 +2,23 @@ default:
   description: 'Default task'
   tasks:
     - prod
+prod:
+  description: 'Prod Build'
+  tasks:
+    - "concurrent:prodCheck"
+    - "concurrent:prodCompile"
+dev:
+  descriptoin: "Dev Build"
+  tasks:
+    - 'concurrent:devCheck'
+    - 'concurrent:devCompile'
+    - 'connect:server'
+    - 'watch'
+test:
+  description: 'Test'
+  tasks:
+    - 'assemble:dev'
+cleanDev:
+  description: 'Clean'
+  tasks:
+    - 'clean:dev'

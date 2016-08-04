@@ -1,0 +1,213 @@
+$header-height: 65px;
+
+header {
+  .logo {
+    margin: 10px 0;
+  }
+  .logout {
+    min-width: 300px;
+    ul {
+      text-align: right;
+    }
+  }
+  .logged {
+    text-align: right;
+    font-size: 0;
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+  nav {
+    > ul {
+      > li {
+        > a {
+          position: relative;
+          display: inline-block;
+          height: $header-height;
+          font-size: $base-font-size;
+          line-height: $header-height;
+          padding: 0 20px;
+          transition: all .3s;
+        }
+        &:hover {
+          > a {
+            background-color: $default;
+            color: $default;
+          }
+        }
+      }
+    }
+  }
+
+  .submenu {
+    display: none;
+  }
+
+  .logged {
+    .menu-ico {
+      &:after {
+        transition: all .3s;
+        opacity: 0;
+        width: 100%;
+        height: $header-height;
+        content: ' ';
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    ul > li {
+      &:hover {
+        a:after {
+          opacity: 1;
+        }
+      }
+    }
+
+    .add-menu {
+      &:after {
+        background-image: url(../../../img/ico/add.png);
+      }
+    }
+    .catalog-menu {
+      &:after {
+        background-image: url(../../../img/ico/catalog.png);
+      }
+    }
+    .my-books-menu {
+      &:after {
+        background-image: url(../../../img/ico/my-books.png);
+      }
+    }
+    .forum-menu {
+      &:after {
+        background-image: url(../../../img/ico/forum.png);
+      }
+    }
+    .moderation-menu {
+      &:after {
+        background-image: url(../../../img/ico/moderation.png);
+      }
+    }
+  }
+
+  .logged {
+    > ul {
+      > li {
+        position: relative;
+      }
+    }
+  }
+
+  li,
+  .user {
+    &:hover {
+      .submenu {
+        display: block;
+        position: absolute;
+        top: $header-height;
+        left: 50%;
+        background-color: $third;
+        padding: 12px;
+        min-width: 170px;
+        border-radius: 10px;
+        text-align: left;
+        margin-top: 25px;
+        margin-left: -85px;
+      }
+
+    }
+  }
+  .submenu {
+    li {
+      font-size: $base-font-size;
+      padding: 6px 0 6px 32px;
+      position: relative;
+      line-height: 25px;
+      &:before {
+        position: absolute;
+        left: 0;
+        display: block;
+        content: ' ';
+        width: 25px;
+        height: 25px;
+        background: url(../../../img/ico/submenu-icons.png) no-repeat 0 0;
+      }
+      a{
+        font-size: 12px;
+        line-height: 25px;
+        &:hover{
+          color: $default;
+        }
+      }
+    }
+    &:after {
+      display: block;
+      width: 100%;
+      content: '';
+      height: 25px;
+      position: absolute;
+      top: -25px;
+      left: 0;
+    }
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -20px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid $third;
+      margin-left: -10px;
+    }
+    li.add-new-book {
+      &:before {
+        background-position: -25px 0;
+      }
+    }
+    li.add-new-author {
+      &:before {
+        background-position: 0 0;
+      }
+    }
+    li.exit-menu {
+      &:before {
+        background-position: -50px 0;
+      }
+    }
+    li.settings-menu {
+      &:before {
+        background-position: -75px 0;
+      }
+    }
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+  .user-name {
+    font-size: $base-font-size;
+    padding: 0 10px;
+    color: $third;
+    line-height: $header-height;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .user {
+    vertical-align: top;
+    line-height: $header-height;
+    padding-left: 10px;
+    background-color: $default;
+    border-left: 1px solid $third;
+    position: relative;
+    img {
+      line-height: $header-height;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+  }
+}

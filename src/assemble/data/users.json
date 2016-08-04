@@ -1,0 +1,54 @@
+{
+  "users": [
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 1,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 2,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 3,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 4,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 5,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 6,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 7,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 8,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 9,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "position": 10,
+      "name": "Solovei"
+    }
+  ]
+}

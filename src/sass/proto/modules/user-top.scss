@@ -1,0 +1,41 @@
+.users-top {
+  .title{
+    margin: 20px 0;
+  }
+  .num {
+    display: block;
+    float: right;
+    height: 39px;
+    line-height: 39px;
+    margin-right: 6px;
+    color: #cdcdcd;
+    &.top {
+      color: #787878;
+    }
+  }
+
+  li:nth-child(odd) {
+    background-color: #f3f3f3;
+  }
+  li:nth-child(even) {
+    background-color: #fff;
+  }
+  li {
+    height: 39px;
+    &:hover {
+      background-color: $default;
+      span{
+        color: $third;
+      }
+      .num{
+        color: $third;
+      }
+    }
+    cursor: pointer;
+  }
+  span {
+    line-height: 39px;
+    vertical-align: top;
+    padding-left: 6px;
+  }
+}

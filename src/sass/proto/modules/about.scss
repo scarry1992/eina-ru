@@ -1,0 +1,35 @@
+.about-eina {
+  min-height: 438px;
+  text-align: right;
+  &:before {
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.about-proj-wrap {
+  width: 53%;
+  background-color: rgba(255, 255, 255, .5);
+  text-align: left;
+  font-size: 14px;
+  color: $third;
+  display: inline-block;
+  vertical-align: middle;
+  .title {
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, .5);
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .about-text {
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  p{
+    margin-bottom: 10px;
+  }
+}

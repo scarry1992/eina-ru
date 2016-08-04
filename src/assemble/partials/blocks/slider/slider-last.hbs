@@ -1,0 +1,11 @@
+<div class="full-width bg ind slider-wrap">
+    <h3 class="title">Последние добавленные книги<span class="title-icon cup"></span></h3>
+
+    <div class="slider">
+        <ul class="slider-scroll-wrap scroller">
+            {{#each books}}
+                {{> slider-book-item}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
