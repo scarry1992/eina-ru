@@ -1,0 +1,14 @@
+.promo {
+  font-size: 32px;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  min-height: 90px;
+  text-align: left;
+  &:before {
+    content: "";
+    display: inline-block;
+    min-height: inherit;
+    height: 100%;
+    vertical-align: middle;
+  }
+}

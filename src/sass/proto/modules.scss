@@ -2,4 +2,9 @@
   height: 438px;
   background: $default url(../../../img/bg-home.jpg) no-repeat center;
   min-width: 1014px;
+  &--promo {
+    height: 90px;
+    background: $default url(../../../img/promo.png) no-repeat;
+    background-size: 100%;
+  }
 }

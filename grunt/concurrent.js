@@ -8,7 +8,7 @@ module.exports = {
     devCompile: {
         //limit: 4,
         tasks: [
-            ['assemble:dev', 'sass:dev', 'imagemin:dev', 'copy:js', 'copy:css']
+            ['assemble:dev', 'sass:dev', 'imagemin:dev', 'copy']
         ]
     }
 

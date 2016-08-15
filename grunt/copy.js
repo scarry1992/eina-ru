@@ -14,4 +14,9 @@ module.exports = {
             {expand: true, cwd: 'bower_components/malihu-custom-scrollbar-plugin/', src: ['jquery.mCustomScrollbar.min.css'], dest: 'dev/assets/style/vendor/'}
         ]
     },
+    font: {
+        files: [
+            {expand: true, cwd: 'src/font/', src: ['**'], dest: 'dev/assets/font/'}
+        ]
+    }
 };

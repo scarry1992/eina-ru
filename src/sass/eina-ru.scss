@@ -1,1 +1,18 @@
-@import "proto/styles";
+@import 'proto/variables';
+@import 'proto/font';
+@import 'proto/mixins';
+@import 'proto/base';
+@import 'proto/layout';
+@import 'proto/states';
+@import 'proto/modules';
+@import 'proto/jquery.mCustomScrollbar.custom';
+
+@import 'proto/modules/header';
+@import 'proto/modules/about';
+@import 'proto/modules/promo';
+@import 'proto/modules/slider';
+@import 'proto/modules/steps';
+@import 'proto/modules/develop';
+@import 'proto/modules/user-top';
+@import 'proto/modules/random-book';
+@import 'proto/modules/footer';

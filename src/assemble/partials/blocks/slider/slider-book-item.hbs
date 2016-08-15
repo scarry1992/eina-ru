@@ -2,12 +2,12 @@
     <a href="#"><img src={{cover}} alt="img"/></a>
     <div class="parametrs">
         <ul>
-            {{#each parametrs}}
+            {{#eachProperty parametrs}}
                 <li>
                     <div class="key">{{key}}</div>
-                    <div class="value">{{val}}</div>
+                    <div class="value">{{this.value}}</div>
                 </li>
-            {{/each}}
+            {{/eachProperty}}
         </ul>
         <a href="#"><div class="button-second">Подробнее</div></a>
     </div>

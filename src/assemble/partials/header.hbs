@@ -1,47 +1,11 @@
 <header>
     <section>
         <div class="fixin clearfix">
-            <!-- user is not logged -->
-            <!--<div class="logo">
-                <img src="img/logo.png" alt="logo"/>
-            </div>
-            <nav class="logout">
-                <ul class="in-bl">
-                    <li><a href="#">Регистрация</a></li>
-                    <li><a href="#">Вход</a></li>
-                </ul>
-            </nav>-->
-            <!-- /user is not logged -->
-
-            <!-- user is logged-->
-            <div class="logo pull-left">
-                <a href="#"><img src="img/logo.png" alt="logo"/></a>
-            </div>
-            <nav class="in-bl logged">
-                <ul class="in-bl">
-                    <li><a class="catalog-menu menu-ico" href="#"><span>Каталог книг</span></a></li>
-                    <li><a class="my-books-menu menu-ico" href="#"><span>Мои книги (2132)</span></a></li>
-                    <li>
-                        <a class="add-menu menu-ico" href="#"><span>Добавить</span></a>
-                        <ul class="submenu">
-                            <li class="add-new-book"><a class="submenu-link" href="#">Новую книгу</a></li>
-                            <li class="add-new-author"><a class="submenu-link" href="#">Нового автора</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="forum-menu menu-ico" href="#"><span>Форум</span></a></li>
-                    <li><a class="moderation-menu menu-ico" href="#"><span>Модерация</span></a></li>
-                </ul>
-                <div class="user">
-                    <img src="img/avatars/user-pic.jpg" alt="user"/>
-                    <span class="user-name">Anna_ganich</span>
-                    <ul class="submenu">
-                        <li class="settings-menu"><a href="#">Настройки</a></li>
-                        <li class="exit-menu"><a href="#">Выход</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- /user is logged-->
+            {{#if logged}}
+                {{> logged}}
+            {{else}}
+                {{> not-logged}}
+            {{/if}}
         </div>
     </section>
 </header>
