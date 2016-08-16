@@ -1,0 +1,20 @@
+.breadcrumb{
+  font-size: 14px;
+  line-height: 1.571;
+  background-color: $third;
+  text-align: left;
+  margin-bottom: 12px;
+  padding-left: 0;
+  li {
+    &.active {
+      color: #a0a0a0;
+    }
+    a {
+      color: $second;
+      text-decoration: underline;
+    }
+    &+li:before {
+      content: ">";
+    }
+  }
+}

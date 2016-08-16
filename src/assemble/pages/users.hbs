@@ -1,7 +1,6 @@
 ---
 title: Пользователи
 logged: true
-promo: Пользователи
 ---
 
 <div class="l-main-container">
@@ -9,10 +8,11 @@ promo: Пользователи
         {{> promo}}
         <section>
             <div class="fixin clearfix">
-                <div class="content col-md-9 col-lg-9 col-sm-9 col-xs-9">
-
+                <div class="content col-md-9 col-lg-9 col-sm-9 col-xs-9 del-padding-left">
+                    {{> breadcrumbs}}
+                    {{> search}}
                 </div>
-                <div class="sidebar col-md-3 col-lg-3 col-sm-3 col-xs-3">
+                <div class="sidebar col-md-3 col-lg-3 col-sm-3 col-xs-3 del-padding-right">
                     {{> user-top}}
                 </div>
             </div>

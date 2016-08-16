@@ -130,3 +130,16 @@ a{
     background-position: -90px 0;
   }
 }
+.del-padding-left{
+  padding-left: 0;
+}
+.del-padding-right{
+  padding-right: 0;
+}
+.content {
+  background-color: $third;
+  padding: 0 2.96%;
+}
+.sidebar {
+  padding-left: 2.96%;
+}
