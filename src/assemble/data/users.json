@@ -1,5 +1,5 @@
 {
-  "users": [
+  "top": [
     {
       "avatar": "img/avatars/user-pic.jpg",
       "position": 1,
@@ -48,6 +48,128 @@
     {
       "avatar": "img/avatars/user-pic.jpg",
       "position": 10,
+      "name": "Solovei"
+    }
+  ],
+  "table": [
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
+      "name": "Solovei"
+    },
+    {
+      "avatar": "img/avatars/user-pic.jpg",
+      "raiting": 54,
+      "readed": 32,
       "name": "Solovei"
     }
   ]

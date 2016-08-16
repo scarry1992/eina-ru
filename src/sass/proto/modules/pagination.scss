@@ -1,0 +1,59 @@
+.pagination {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  &>li {
+    &>a {
+      &:hover {
+        background-color: $default;
+        color: $third;
+        border-color: $default;
+      }
+      margin-right: 3px;
+      border-radius: 4px;
+      border-color: $third;
+      padding: 3px 6px;
+      color: $second;
+    }
+  }
+  &>li.active {
+    &>a {
+      background-color: $default;
+      border-color: $default;
+      color: $third;
+    }
+  }
+  &.button {
+    &>li {
+      text-align: center;
+      &>a {
+        &:hover {
+          background-color: $default;
+          color: $third;
+          border-color: $default;
+        }
+        font-size: 12px;
+        width: 115px;
+        margin-right: 2px;
+        padding: 3px 6px;
+        color: $third;
+        border-color: $second;
+        background-color: $second;
+      }
+      &>a.disabled {
+        color: $default;
+        background-color: $second;
+      }
+      .prev {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .next {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}
+
+

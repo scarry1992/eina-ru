@@ -1,0 +1,13 @@
+<div class="users-table">
+    <div class="header">
+        <span class="user-label">Пользователь</span>
+        <span class="reded-books-label">Прочитано книг</span>
+        <span class="raiting-label">Рейтинг</span>
+    </div>
+    <ul>
+        {{#each users.table}}
+            {{> user-table__user}}
+        {{/each}}
+    </ul>
+    <hr>
+</div>
