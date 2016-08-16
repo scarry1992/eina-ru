@@ -1,0 +1,25 @@
+.nav-alfabet {
+  background-color: $default;
+  padding: 0 15px;
+  &>li{
+    &:last-child {
+      margin-left: 4px;
+    }
+    &>a{
+      &:hover {
+        background-color: $second;
+        cursor: pointer;
+      }
+      font-size: 16px;
+      color: $third;
+      line-height: 1.375;
+      font-weight: bold;
+      padding:10px 4px;
+    }
+    &>a.active {
+      color:$second;
+    }
+  }
+}
+
+

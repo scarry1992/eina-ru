@@ -1,0 +1,11 @@
+<ul class="nav nav-pills nav-alfabet">
+    {{#eachProperty alfabet-pointer}}
+        <li>
+            {{#isnt this.value "М"}}
+                <a src="#">{{this.value}}</a>
+            {{else}}
+                <a class="active" src="#">{{this.value}}</a>
+            {{/isnt}}
+        </li>
+    {{/eachProperty}}
+</ul>
