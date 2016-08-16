@@ -1,6 +1,7 @@
 .nav-alfabet {
   background-color: $default;
   padding: 0 15px;
+  margin-bottom: 15px;
   &>li{
     &:last-child {
       margin-left: 4px;
@@ -17,6 +18,10 @@
       padding:10px 4px;
     }
     &>a.active {
+      &:hover {
+        color: $third;
+        cursor: pointer;
+      }
       color:$second;
     }
   }

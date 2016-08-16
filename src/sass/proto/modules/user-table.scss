@@ -1,0 +1,67 @@
+.users-table {
+  &>.header {
+    span {
+      font-size: 12px;
+      color: #a7a7a7;
+      font-style: italic;
+    }
+    .user-label {
+      margin-left: 5%;
+    }
+    .reded-books-label {
+      margin-left: 50%;
+    }
+    .raiting-label {
+      float:right;
+      margin-right: 15px;
+    }
+  }
+  hr {
+    color: $second;
+    background-color: $second;
+    height: 2px;
+  }
+  .title{
+    margin: 20px 0;
+  }
+  .num {
+    display: block;
+    float: right;
+    height: 39px;
+    line-height: 39px;
+    margin-right: 20px;
+    color: #cdcdcd;
+    &.raiting {
+      color: #787878;
+    }
+    &.readed {
+      margin-right: 15%;
+      color: #787878;
+    }
+  }
+
+  li:nth-child(odd) {
+    background-color: #f3f3f3;
+  }
+  li:nth-child(even) {
+    background-color: #fff;
+  }
+  li {
+    height: 39px;
+    &:hover {
+      background-color: $default;
+      span{
+        color: $third;
+      }
+      .num{
+        color: $third;
+      }
+    }
+    cursor: pointer;
+  }
+  span {
+    line-height: 39px;
+    vertical-align: top;
+    padding-left: 6px;
+  }
+}
