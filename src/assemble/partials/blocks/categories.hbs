@@ -1,0 +1,12 @@
+<div class="custom-table">
+    <h3 class="title">Категории</h3>
+    <ul>
+        {{#eachProperty categories}}
+            <li>
+                <span>{{key}}</span>
+
+                <div class="num">{{this.value}}</div>
+            </li>
+        {{/eachProperty}}
+    </ul>
+</div>

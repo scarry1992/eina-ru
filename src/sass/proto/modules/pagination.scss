@@ -18,6 +18,11 @@
   }
   &>li.active {
     &>a {
+      &:hover {
+        background-color: $default;
+        color: $third;
+        border-color: $default;
+      }
       background-color: $default;
       border-color: $default;
       color: $third;
@@ -41,8 +46,8 @@
         background-color: $second;
       }
       &>a.disabled {
-        color: $default;
-        background-color: $second;
+        color: $second;
+        background-color: $third;
       }
       .prev {
         border-bottom-right-radius: 0;

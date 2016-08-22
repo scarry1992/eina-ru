@@ -1,0 +1,141 @@
+$lineHeight: 1.571;
+.book {
+  transition: all .3s ease;
+  hr {
+    margin: 5px 0;
+  }
+  .book__item {
+    .book__title {
+      color:$second;
+    }
+    .book__cover-wrapper {
+      .book__cover-wrapper--active:hover {
+        .book__add {
+          display: block;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &>img {
+          display: none;
+        }
+      }
+      width: 20%;
+      display: inline-block;
+      .actions {
+        transition: all .3s ease;
+        //visibility: hidden;
+        //opacity: 0;
+        a{
+          display: inline-block;
+          width: 20px;
+          margin: 0 2.3px;
+          height: 20px;
+          text-align: center;
+          &.glyphicon {
+            &:hover {
+              color: $default;
+            }
+            color: $second;
+          }
+        }
+      }
+    }
+    .book__add {
+      transition: all .3s ease;
+      opacity: 0;
+      display: none;
+      margin-bottom: 2.5px;
+      height: 212px;
+      width: 139px;
+      background-color: $default;
+      .glyphicon-plus {
+        position: relative;
+        top: 15%;
+        display: block;
+        font: {
+          size: 56px;
+          weight: bold;
+        }
+        text-align: center;
+        height: 55px;
+        width: 55px;
+        margin: 0 30%;
+        color: $third;
+        border-radius: 50%;
+        background-color:$second;
+      }
+      span {
+        display: block;
+        text-align: center;
+        position: relative;
+        top: 20%;
+        color:$third;
+        font-size: 20px;
+        &:nth-child(2n) {
+          font-weight: bold;
+        }
+        &:last-child{
+          font-size: 16px;
+        }
+      }
+    }
+    .book__parametrs-wrap{
+      width: 79%;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 14px;
+      .book__parametrs {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        & ul li .key  {
+          color: #a0a0a0;
+        }
+        & ul li .value  {
+          font-weight: bold;
+        }
+        & ul li:first-child .value  {
+          color:$second;
+        }
+      }
+      li{
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      a {
+        font-size: 12px;
+        color:$second;
+        cursor: pointer;
+        &.preview {
+          &:before {
+            content: "\203A";
+            margin-right: 5px;
+            font-size: 24px;
+          }
+        }
+        &.fullview {
+          display: none;
+          &:before {
+            content: "\203A";
+            margin-right: 5px;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    .book__description {
+      text-overflow: ellipsis;
+      max-height: #{$lineHeight*10*14}px;
+      display: inline-block;
+      width: 69%;
+      color: #a0a0a0;
+      line-height: $lineHeight;
+      cursor: pointer;
+    }
+    .overflowed {
+      overflow: hidden;
+    }
+  }
+}
+

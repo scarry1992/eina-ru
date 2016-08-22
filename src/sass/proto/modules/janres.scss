@@ -1,0 +1,31 @@
+.janres {
+  .title{
+    margin: 20px 0;
+  }
+  .main {
+    background-color: $third;
+  }
+  li {
+    height: 39px;
+    &:hover {
+      background-color: $default;
+      span{
+        color: $third;
+      }
+    }
+    cursor: pointer;
+  }
+  span {
+    &:before {
+      content: "\b7";
+      margin-right: 4px;
+      font-size: 24px;
+    }
+    line-height: 39px;
+    vertical-align: top;
+    padding-left: 6px;
+  }
+  .pagination {
+    margin:5px;
+  }
+}
