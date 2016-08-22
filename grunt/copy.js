@@ -16,7 +16,8 @@ module.exports = {
     },
     font: {
         files: [
-            {expand: true, cwd: 'src/font/', src: ['**'], dest: 'dev/assets/font/'}
+            {expand: true, cwd: 'src/font/', src: ['**'], dest: 'dev/assets/font/'},
+            {expand: true, cwd: 'bower_components/bootstrap/dist/fonts/', src: ['**'], dest: 'dev/assets/font/'}
         ]
     }
 };

@@ -1,0 +1,27 @@
+.user-position {
+  margin-bottom: 30px;
+  white-space: nowrap;
+  img {
+    line-height: 37px;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .description {
+    width: 20%;
+    display: inline-block;
+    &:before{
+      margin-left: 10px;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      content: url('../../../img/ico/ico-like.png');
+    }
+    span {
+      font-size: 20px;
+      &.count {
+        color: #bcbcbc;
+      }
+    }
+  }
+}
