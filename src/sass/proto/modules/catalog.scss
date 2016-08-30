@@ -1,0 +1,26 @@
+.catalog {
+  margin-bottom: 15px;
+  .catalog__action {
+    font-size: 34px;
+    &.glyphicon-ok{
+      color: $second;
+    }
+    &.glyphicon-plus-sign {
+      color: $default;
+    }
+  }
+  .catalog__book {
+    display: inline-block;
+    margin-left:15px;
+    .author {
+      margin-top: 2px;
+      font-size: 14px;
+      color: lightgray;
+    }
+  }
+  hr {
+    color: $second;
+    background-color: $second;
+    height: 2px;
+  }
+}

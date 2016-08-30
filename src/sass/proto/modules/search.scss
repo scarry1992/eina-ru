@@ -3,11 +3,19 @@
   background-color: $default;
   margin-bottom: 30px;
     .btn {
-      width: 80px;
+      min-width: 80px;
       float: right;
       background-color: $second;
       color: $third;
       font-weight: bold;
     }
+  #categories-search {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+  #categories-select {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
 }
 

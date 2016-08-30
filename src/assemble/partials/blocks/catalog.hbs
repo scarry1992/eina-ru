@@ -1,0 +1,16 @@
+<div class="catalog">
+    {{#each books}}
+        <div class="catalog__item">
+            {{#is readed 1}}
+                <a class="catalog__action glyphicon glyphicon-ok" href=""></a>
+            {{else}}
+                <a class="catalog__action glyphicon glyphicon-plus-sign" href=""></a>
+            {{/is}}
+            <div class="catalog__book">
+                <div class="title">{{title}}</div>
+                <div class="author">{{parametrs.Автор}}</div>
+            </div>
+        </div>
+    {{/each}}
+    <hr>
+</div>
