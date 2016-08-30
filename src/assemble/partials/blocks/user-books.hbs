@@ -1,12 +1,13 @@
 <section class="user-books">
     <h3 class="title">Прочитанные книги пользователя</h3>
     <div class="books">
+        {{#each books}}
         <div class="book">
 
             <div class="book__item">
                 <div class="book__cover-wrapper">
                     <div class="book__cover-wrapper--active">
-                        <img src="img/covers/1.jpg" alt="pic"/>
+                        <img src={{cover}} alt="pic"/>
                         <a href="#">
                             <div class="book__add">
                                 <span class="glyphicon-plus"></span>
@@ -18,49 +19,34 @@
 
                     <div class="actions">
                         <a class="glyphicon glyphicon-asterisk" href="#"></a>
-                        <a class="glyphicon glyphicon-ok" href=""></a>
-                        <a class="glyphicon glyphicon-heart" href=""></a>
-                        <a class="glyphicon glyphicon-book" href=""></a>
-                        <a class="glyphicon glyphicon-user" href=""></a>
+                        <a class="glyphicon glyphicon-ok" href="#"></a>
+                        <a class="glyphicon glyphicon-heart" href="#"></a>
+                        <a class="glyphicon glyphicon-book" href="#"></a>
+                        <a class="glyphicon glyphicon-user" href="#"></a>
                     </div>
                 </div>
                 <div class="book__parametrs-wrap">
-                    <span class="book__title">Дочь тумана и костей</span>
+                    <span class="book__title">{{title}}</span>
                     <hr>
                     <div class="book__parametrs">
                         <ul>
-                            <li>
-                                <div class="key">Автор</div>
-                                <div class="value">Тейлор Лэйни</div>
-                            </li>
-                            <li>
-                                <div class="key">Серия</div>
-                                <div class="value">Современный любовный роман</div>
-                            </li>
-                            <li>
-                                <div class="key">Жанр</div>
-                                <div class="value">Фэнтези</div>
-                            </li>
-                            <li>
-                                <div class="key">ISBN</div>
-                                <div class="value">978-5-699-46282-7</div>
-                            </li>
+                            {{#eachProperty parametrs}}
+                                <li>
+                                    <div class="key">{{key}}</div>
+                                    <div class="value">{{this.value}}</div>
+                                </li>
+                            {{/eachProperty}}
                         </ul>
                     </div>
                     <div class="book__description overflowed">
-                        Это история двух незнакомых людей, обретших почти сверхъестественную связь после
-                        операции по переливанию крови… Джастин Хичкок, отдавший свою кровь для анонимного
-                        переливания, вдруг получает подарочную корзинку, в которую вложена благодарственная
-                        записка… Джойс Конвей вспоминает такие родные мощеные парижские переулки, но… она
-                        никогда не была в Париже! Каждую ночь ей снится маленькая девочка с длинными белокурыми
-                        волосами, но… она не знает эту девочку! Или все- таки знает?… Откуда к ней приходят
-                        такие воспоминания? Как найти того единственного, с кем они обретут реальность?
+                        {{description}}
                     </div>
                     <a class="preview pull-right">Развернуть</a>
                     <a class="fullview pull-right">Свернуть</a>
                 </div>
             </div>
         </div>
+        {{/each}}
     </div>
 </section>
 

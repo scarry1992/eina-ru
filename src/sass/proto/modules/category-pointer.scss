@@ -1,0 +1,28 @@
+.nav-category {
+  background-color: $default;
+  margin-bottom: 2px;
+  &>li{
+    &:last-child {
+      margin-left: 4px;
+    }
+    &>a{
+      &:hover {
+        background-color: $second;
+        cursor: pointer;
+      }
+      border-radius: 0;
+      font-size: 16px;
+      color: $third;
+      line-height: 1.375;
+      font-weight: bold;
+    }
+    &>a.active {
+      &:hover {
+        cursor: pointer;
+      }
+      background-color: $second;
+    }
+  }
+}
+
+
