@@ -1,0 +1,29 @@
+.important-info {
+  .label-container {
+    margin-bottom: 12px;
+    span {
+      color: black;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .glyphicon-warning-sign {
+      color:$second;
+    }
+  }
+  .info {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color:$custom-grey;
+    line-height: 1.571;
+  }
+  ul {
+    margin-left: 2.4%;
+  }
+  li {
+    margin-bottom: 15px;
+    list-style-type: disc;
+  }
+}
+
+
+
