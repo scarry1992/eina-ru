@@ -40,6 +40,12 @@ header {
     }
   }
 
+  .logout {
+    ul>li:hover a {
+      color: $third;
+    }
+  }
+
   .submenu {
     display: none;
   }

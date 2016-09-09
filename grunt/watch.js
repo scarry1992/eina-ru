@@ -12,7 +12,12 @@ module.exports = {
             'assemble:dev'
         ]
     },
-    //scripts: {},
+    scripts: {
+        files: ['src/scripts/**/*.js'],
+        tasks: [
+            'copy:js'
+        ]
+    },
     sass: {
         files: ['src/sass/**/*.scss'],
         tasks: [

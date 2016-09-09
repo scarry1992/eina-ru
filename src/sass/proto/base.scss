@@ -139,7 +139,30 @@ a{
 .content {
   background-color: $third;
   padding: 0 2.96%;
+  min-height: 48em;
 }
 .sidebar {
   padding-left: 2.96%;
+}
+.form-control {
+  &:active {
+    border-color: $second;
+  }
+  &:focus {
+    border-color: $second;
+  }
+}
+.btn {
+  &:active {
+    outline-color: $second;
+  }
+  &:active:focus {
+    outline-color: $second;
+  }
+  &:focus {
+    outline-color: $second;
+  }
+}
+a {
+  color:$second;
 }

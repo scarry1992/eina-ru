@@ -1,6 +1,8 @@
 <section>
     <ul class="breadcrumb">
-        <li><a href="#">Главная</a></li>
-        <li class="active">Пользователи</li>
+        {{#each breadcrumbs.usual}}
+            <li><a href="#">{{this}}</a></li>
+        {{/each}}
+        <li class="active">{{breadcrumbs.active}}</li>
     </ul>
 </section>
